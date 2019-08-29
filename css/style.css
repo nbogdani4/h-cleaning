@@ -1,25 +1,259 @@
-body {
-  /* margin: 0;
-  padding: 0;
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: url("/fonts/josefinsans-light.woff2") format("woff2"), url("/fonts/josefinsans-light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: normal;
-  font-family: "Cuprum", Arial, sans-serif;
-  color: #000000;
-  background-color: #ffffff; */
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: url("/fonts/josefinsans-regular.woff2") format("woff2"), url("/fonts/josefinsans-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: url("/fonts/josefinsans-semibold.woff2") format("woff2"), url("/fonts/josefinsans-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: url("/fonts/josefinsans-bold.woff2") format("woff2"), url("/fonts/josefinjans-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Raleway';
+  font-display: swap;
+  src: url("/fonts/raleway-regular.woff2") format("woff2"), url("/fonts/raleway-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Raleway';
+  font-display: swap;
+  src: url("/fonts/raleway-semiBold.woff2") format("woff2"), url("/fonts/raleway-semiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Raleway';
+  font-display: swap;
+  src: url("/fonts/raleway-semiBold.woff2") format("woff2"), url("/fonts/raleway-bold.woff") format("woff");
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-width: 1110px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #414141;
+  background-color: #ffffff;
+  font-family: 'Josefin Sans', 'Arial', 'sans-serif';
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header__top {
+  margin-bottom: 35px;
+  color: #ffffff;
+  background-color: #1175b7;
+  font-family: 'Raleway', 'Arial', 'sans-serif';
+}
+
+.header__top-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 54px;
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 800px;
+}
+
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.header__button {
+  width: 185px;
+}
+
+.contacts__address {
+  position: relative;
+  padding-left: 19px;
+}
+
+.contacts__address:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 11px;
+  height: 15px;
+  background: url(/pic/pin.svg) 0 0 no-repeat;
+}
+
+.contacts__phone {
+  position: relative;
+  padding-left: 66px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts__phone:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 42px;
+  width: 15px;
+  height: 15px;
+  background: url(/pic/phone.svg) 0 0 no-repeat;
+}
+
+.contacts__working-time {
+  position: relative;
+  padding-left: 67px;
+}
+
+.contacts__working-time:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 42px;
+  width: 16px;
+  height: 15px;
+  background: url(/pic/clock.svg) 0 0 no-repeat;
+}
+
+.social-list__item {
+  margin-left: 20px;
+}
+
+.nav {
+  font-family: 'Raleway', 'Arial', 'sans-serif';
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 600px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-right: 35px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  font-weight: 600;
+  color: #1175b7;
+  text-decoration: none;
+}
+
+.button {
+  padding: 16px 23px 17px 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #f6a937;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=style.css.map */

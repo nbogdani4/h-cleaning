@@ -1,0 +1,27 @@
+.nav {
+  @include font-raleway;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-right: 35px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  font-weight: 600;
+  color: #1175b7;
+  text-decoration: none;
+}

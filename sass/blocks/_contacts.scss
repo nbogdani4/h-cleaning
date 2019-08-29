@@ -1,0 +1,46 @@
+  .contacts__address {
+  position: relative;
+  padding-left: 19px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 11px;
+    height: 15px;
+    background: url(/pic/pin.svg) 0 0 no-repeat;
+  }
+}
+
+.contacts__phone {
+  position: relative;
+  padding-left: 66px;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 42px;
+    width: 15px;
+    height: 15px;
+    background: url(/pic/phone.svg) 0 0 no-repeat;
+  }
+}
+
+.contacts__working-time {
+  position: relative;
+  padding-left: 67px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 42px;
+    width: 16px;
+    height: 15px;
+    background: url(/pic/clock.svg) 0 0 no-repeat;
+  }
+}

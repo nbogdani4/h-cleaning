@@ -1,0 +1,42 @@
+  .header__top {
+  margin-bottom: 35px;
+  color: #ffffff;
+  background-color: #1175b7;
+
+  @include font-raleway;
+}
+
+.header__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 54px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.header__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.header__button {
+  width: 185px;
+}

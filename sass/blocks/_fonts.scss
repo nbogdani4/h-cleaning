@@ -1,0 +1,71 @@
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: url("/fonts/josefinsans-light.woff2") format("woff2"),
+  url("/fonts/josefinsans-light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: url("/fonts/josefinsans-regular.woff2") format("woff2"),
+  url("/fonts/josefinsans-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: url("/fonts/josefinsans-semibold.woff2") format("woff2"),
+  url("/fonts/josefinsans-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: url("/fonts/josefinsans-bold.woff2") format("woff2"),
+  url("/fonts/josefinjans-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Raleway';
+  font-display: swap;
+  src: url("/fonts/raleway-regular.woff2") format("woff2"),
+  url("/fonts/raleway-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Raleway';
+  font-display: swap;
+  src: url("/fonts/raleway-semiBold.woff2") format("woff2"),
+  url("/fonts/raleway-semiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Raleway';
+  font-display: swap;
+  src: url("/fonts/raleway-semiBold.woff2") format("woff2"),
+  url("/fonts/raleway-bold.woff") format("woff");
+}
+
+@mixin font-josefin {
+  font-family: 'Josefin Sans', 'Arial', 'sans-serif';
+}
+
+@mixin font-raleway {
+  font-family: 'Raleway', 'Arial', 'sans-serif';
+}
+
