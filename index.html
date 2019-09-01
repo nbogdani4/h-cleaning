@@ -65,7 +65,7 @@
       <a class="header__logo logo" href="#"><img class="logo__img" width="162" height="32" src="/pic/logo.svg" alt="Cleaning company H.Cleanin"></a>
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link--current">Home</a></li>
           <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
@@ -78,21 +78,34 @@
   </header>
   <main class="main">
     <h1 class="sr-only">Official homepage of the company H.Cleaning</h1>
-    <ul class="main__slider slider-list">
-      <li class="slider-list__item slider-list__item--one">
-        <div class="container">
-          <div class="slider-list__item-wrapper">
-            <p class="slider-list__phrase slider-list__phrase--first">We clean a Whole lot more!</p>
-            <p class="slider-list__phrase slider-list__phrase--second">Cleaning Yours House Make World & Clean Mine</p>
-            <a class="slider-list__button button" href="#">Book Today</a>
+    <div class="main__slider slider">
+      <div class="container">
+        <div class="slider__content">
+          <div class="slider__content-wrapper">
+              <p class="slider__phrase slider__phrase--first">We clean a Whole lot more!</p>
+              <p class="slider__phrase slider__phrase--second">Cleaning Yours House Make World & Clean Mine</p>
+              <a class="slider__button button" href="#">Book Today</a>
           </div>
+          <ul class="slider__nav-list">
+            <li class="slider__nav-item">
+              <button class="slider__nav-btn slider__nav-btn--current">
+                <span class="sr-only">first slide</span>
+              </button>
+            </li>
+            <li class="slider__nav-item">
+              <button class="slider__nav-btn">
+                <span class="sr-only">second slide</span>
+              </button>
+            </li>
+            <li class="slider__nav-item">
+              <button class="slider__nav-btn">
+                <span class="sr-only">third slide</span>
+              </button>
+            </li>
+          </ul>
         </div>
-      </li>
-      <li class="slider-list__item slider-list__item--two">
-      </li>
-      <li class="slider-list__item slider-list__item--three">
-      </li>
-    </ul>
+      </div>
+    </div>
 
 
 

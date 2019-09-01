@@ -256,4 +256,121 @@ img {
   background-color: #f6a937;
   border-radius: 3px;
 }
+
+.slider {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  min-height: 800px;
+  margin: 0;
+  margin-bottom: 120px;
+  padding: 0;
+  list-style: none;
+  background-image: url(/pic/slider1@1x.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .slider {
+    background-image: url("/pic/slider1@2x.jpg");
+    background-size: auto 800px;
+  }
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 85, 130, 0.3);
+}
+
+.slider__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 261px;
+}
+
+.slider__phrase {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Raleway', 'Arial', 'sans-serif';
+}
+
+.slider__phrase--first {
+  margin-bottom: 29px;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 27px;
+}
+
+.slider__phrase--second {
+  width: 800px;
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.slider__button {
+  width: 170px;
+  font-size: 18px;
+}
+
+.slider__nav-list {
+  position: absolute;
+  bottom: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__nav-item {
+  margin-left: 9px;
+}
+
+.slider__nav-item:first-child {
+  margin-left: 0;
+}
+
+.slider__nav-btn {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  background-color: #767676;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__nav-btn--current {
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
