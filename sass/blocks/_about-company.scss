@@ -1,0 +1,100 @@
+.about-company {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url(/pic/man-wash-window@1x.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  min-height: 748px;
+  margin-bottom: 120px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/pic/man-wash-window@2x.jpg");
+    background-size: auto 748px;
+  }
+}
+
+.about-company__story {
+  background-color: #038fd6;
+  width: 570px;
+  min-height: 570px;
+  border-left: 30px solid #ffffff;
+  border-bottom: 30px solid #ffffff;
+  padding-top: 170px;
+  padding-left: 65px;
+  padding-right: 50px;
+}
+
+.about-company__sub-title {
+  font-weight: 600;
+  margin: 0;
+  @include font-raleway;
+  margin-bottom: 19px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #f6a937;
+    top: -23px;
+    left: 0;
+  }
+}
+
+.about-company__title {
+  font-weight: 600;
+  margin: 0;
+  @include font-raleway;
+  font-size: 43px;
+  margin-bottom: 33px;
+  line-height: 53px;
+}
+
+.about-company__text {
+  margin: 0;
+  line-height: 26px;
+}
+
+.about-company__phone {
+  background-color: #f6a937;
+  width: 475px;
+  min-height: 178px;
+  border-left: 30px solid #ffffff;
+  font-weight: 700;
+  padding-top: 60px;
+  padding-left: 150px;
+  padding-right: 50px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 59px;
+    height: 59px;
+    background-image: url(/pic/handset.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 65px;
+    top: 60px;
+  }
+}
+
+.about-company__phone-text {
+  @include font-raleway;
+  margin: 0;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.about-company__phone-number {
+  line-height: 16px;
+  font-size: 35px;
+  color: #ffffff;
+  text-decoration: none;
+
+}
