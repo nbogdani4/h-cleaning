@@ -1,0 +1,84 @@
+.superiority {
+  width: 100%;
+  background-color: #038fd6;
+  color: #fefefe;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 600;
+  padding-top: 195px;
+  padding-bottom: 110px;
+}
+
+.superiority__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.superiority__list-item {
+  text-align: center;
+  width: 25%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 145px;
+    background-color: rgba(#f0d5b5, 0.5);
+    right: 0;
+    bottom: 0;
+  }
+
+  &:last-of-type::before {
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: -90px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+}
+
+.superiority__list-item--free-estimates::after {
+  width: 63px;
+  height: 61px;
+  background-image: url(/pic/calculator.svg);
+
+}
+
+.superiority__list-item--insurance::after {
+  width: 61px;
+  height: 61px;
+  background-image: url(/pic/insurance.svg);
+}
+
+.superiority__list-item--quality::after {
+  width: 62px;
+  height: 61px;
+  background-image: url(/pic/quality.svg);
+}
+
+.superiority__list-item--experience::after {
+  width: 43px;
+  height: 61px;
+  background-image: url(/pic/experience.svg);
+}
+
+.superiority__item-title {
+  margin: 0;
+}
