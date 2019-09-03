@@ -482,4 +482,111 @@ img {
   color: #ffffff;
   text-decoration: none;
 }
+
+.services {
+  width: 100%;
+  padding-top: 140px;
+  padding-bottom: 120px;
+  text-align: center;
+  background-color: #f9f5f2;
+  font-family: 'Raleway', 'Arial', 'sans-serif';
+}
+
+.services__sub-title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #f6a937;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 55px;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  margin-left: -30px;
+  padding: 0;
+  list-style: none;
+}
+
+.services__list-item {
+  width: 350px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.services__list-item:before {
+  content: "";
+  position: absolute;
+  top: 260px;
+  left: 50px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.services__list-item--house:before {
+  width: 74px;
+  height: 71px;
+  background-image: url(/pic/house-cleaning.svg);
+}
+
+.services__list-item--window:before {
+  width: 66px;
+  height: 71px;
+  background-image: url(/pic/window-cleaning.svg);
+}
+
+.services__list-item--garden:before {
+  width: 50px;
+  height: 71px;
+  background-image: url(/pic/garden-cleaning.svg);
+}
+
+.services__item-link {
+  text-decoration: none;
+  display: block;
+}
+
+.services__item-img {
+  display: block;
+  margin-bottom: 130px;
+}
+
+.services__text-wrapper {
+  padding-right: 25px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.services__item-title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 55px;
+  color: #8d8c8c;
+}
+
+.services__item-text {
+  margin: 0;
+  line-height: 24px;
+  color: #848484;
+  font-family: 'Josefin Sans', 'Arial', 'sans-serif';
+}
 /*# sourceMappingURL=style.css.map */
