@@ -1,0 +1,89 @@
+.choose-us {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.choose-us__wrapper {
+  background-image: url(/pic/woman-wash-floor@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 475px 630px;
+  min-height: 630px;
+  padding-left: 540px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/pic/woman-wash-floor@2x.jpg");
+    background-size: 475px 630px;
+  }
+}
+
+.choose-us__title {
+  margin: 0;
+  color: #038fd6;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+  @include font-raleway;
+  padding-bottom: 18px;
+}
+
+.choose-us__sub-title {
+  margin: 0;
+  @include font-raleway;
+  color: #038fd6;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 55px;
+  padding-bottom: 50px;
+}
+
+.choose-us__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  line-height: 42px;
+  padding-left: 30px;
+}
+
+.choose-us__list-item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 13px;
+    left: -30px;
+    background-image: url(/pic/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.choose-us__button {
+  margin-top: auto;
+  max-width: 270px;
+  padding: 30px 28px 30px 80px;
+  @include font-raleway;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 30px;
+    left: 15px;
+    background-image: url(/pic/insurance.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
